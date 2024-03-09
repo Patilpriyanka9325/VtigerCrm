@@ -20,8 +20,9 @@ public class BaseClass
 	//driver is global variable
 	public WebDriver driver; //here we make driver as global variable-->it is giving nullpointer exception
 	
-	//WebDriver driver = new ChromeDriver();
-
+	//Declaration is done only for takescreenshot
+	public static WebDriver sdriver;
+	
 	//creating the object of webdriverutil
 	WebDriverUtil wutil = new WebDriverUtil();
 	
@@ -57,6 +58,9 @@ public class BaseClass
 	   
 	   wutil.manage(driver);
 	   wutil.Implicitwait(driver);
+	   
+	   //Initialization only for takescreenshot
+	   sdriver= driver;
 	   
 	   //To launch the application
 	   driver.get(URL);
