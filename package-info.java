@@ -1,1 +1,1 @@
-package vtigerCRM;
+package BasicPom;
