@@ -1,1 +1,1 @@
-package pom_ObjectRepository;
+package BasicPom;
